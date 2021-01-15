@@ -1,0 +1,35 @@
+.spacer {
+  height: 150px;
+}
+.container {
+  width: 100%;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.08);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 50px 0;
+  text-align: center;
+  footer {
+    display: flex;
+    flex-direction: column;
+
+    .socialLinks {
+      display: flex;
+      height: 5rem;
+      justify-content: center;
+      .icons {
+        color: black;
+        &:hover {
+          color: red;
+        }
+      }
+      .icons ~ .icons {
+        margin-left: 1rem;
+      }
+    }
+
+    .copyright {
+      font-weight: 600;
+    }
+  }
+}

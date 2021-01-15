@@ -1,0 +1,15 @@
+@import "../node_modules/scss-reset/_reset.scss";
+@import url("https://use.fontawesome.com/releases/v5.11.1/css/all.css");
+
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-family: "Noto Sans KR", sans-serif;
+  box-sizing: border-box;
+}
