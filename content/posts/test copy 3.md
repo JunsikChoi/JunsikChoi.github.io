@@ -3,6 +3,7 @@ title: 'test'
 date: '2021-01-10'
 description: "이것은 테스트."
 category: ["마크다운", "테스트"]
+bannerImg: "/images/test2.gif"
 ---
 
 # 테스트~~

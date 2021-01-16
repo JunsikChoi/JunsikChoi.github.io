@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-
+import styles from "../../styles/PostItem.module.scss";
 import { Post } from "../../interfaces";
 
 type Props = {
@@ -8,13 +8,30 @@ type Props = {
 };
 
 const PostItem = ({ post }: Props) => (
-  <Link href="/blog/[id]" as={`/blog/${post.id}`}>
-    <a>
-      <h1>{post.title}</h1>
-      <h3>{post.date}</h3>
-      <p>{post.description}</p>
-    </a>
-  </Link>
+  <div className={styles.container}>
+    <Link href="/blog/[id]" as={`/blog/${post.id}`}>
+      <a>
+        {post.bannerImg ? (
+          <div className={styles.bannerImgContainer}>
+            <img className={styles.bannerImg} src={post.bannerImg}></img>
+          </div>
+        ) : null}
+      </a>
+    </Link>
+    <Link href="/blog/[id]" as={`/blog/${post.id}`}>
+      <a>
+        <div className={styles.postHeader}>
+          <div className={styles.postMeta}>
+            <h1>{post.title}</h1>
+            <span>{post.date}</span>
+          </div>
+          <div className={styles.postSummary}>
+            <p>{post.description}</p>
+          </div>
+        </div>
+      </a>
+    </Link>
+  </div>
 );
 
 export default PostItem;

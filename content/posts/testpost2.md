@@ -3,6 +3,7 @@ title: "testpost2"
 date: '2021-01-11'
 description: "이것은 테스트 포스팅 2 입니다! :)"
 category: ["마크다운", "테스트"]
+bannerImg: "/images/test2.gif"
 ---
 
 # Markdown syntax guide

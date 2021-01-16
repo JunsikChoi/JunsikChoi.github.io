@@ -3,6 +3,7 @@ export type Post = {
   title: string;
   date: string;
   description: string;
-  category: string[];
   content: string;
+  category?: string[];
+  bannerImg?: string;
 };

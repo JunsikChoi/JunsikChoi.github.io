@@ -20,6 +20,7 @@ const getPostsData = (): Post[] => {
       description: matterResult.data.description,
       category: matterResult.data.category,
       content: matterResult.content,
+      bannerImg: matterResult.data.bannerImg || null,
     };
   });
 

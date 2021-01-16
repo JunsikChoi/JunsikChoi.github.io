@@ -1,8 +1,9 @@
 ---
-title: 'test'
+title: 'test222 테스트 제목이 좀 많이 많이 많이 길때?'
 date: '2021-01-10'
-description: "이것은 테스트."
+description: "이것은 테스트. here to demonstrate an extremely long line length, well beyond what you should probably allow in your own code, though sometimes you'll be highlighting code you c"
 category: ["마크다운", "테스트"]
+bannerImg: "/images/test.png"
 ---
 
 # 테스트~~
