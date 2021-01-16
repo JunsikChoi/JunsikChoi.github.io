@@ -8,19 +8,19 @@ export default function Footer() {
         <footer>
           <div className={styles.socialLinks}>
             <a className={styles.icons} href="https://github.com/JunsikChoi">
-              <i className={"fab fa-github fa-3x"}></i>
+              <i className={"fab fa-github"}></i>
             </a>
             <a
               className={styles.icons}
               href="https://www.linkedin.com/in/junsikchoi91/"
             >
-              <i className="fab fa-linkedin fa-3x"></i>
+              <i className="fab fa-linkedin "></i>
             </a>
             <a
               className={styles.icons}
               href="https://www.instagram.com/junsikchoi91/"
             >
-              <i className="fab fa-instagram fa-3x"></i>
+              <i className="fab fa-instagram"></i>
             </a>
           </div>
           <div className={styles.copyright}>

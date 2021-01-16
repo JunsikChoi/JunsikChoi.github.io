@@ -1,19 +1,20 @@
 import * as React from "react";
 import PostItem from "./PostItem";
 import { Post } from "../../interfaces";
+import styles from "../../styles/PostList.module.scss";
 
 type Props = {
   posts: Post[];
 };
 
 const PostList = ({ posts }: Props) => (
-  <ul>
+  <div className={styles.postContainer}>
     {posts.map((post) => (
-      <li key={post.id}>
+      <div key={post.id} className={styles.postItem}>
         <PostItem post={post} />
-      </li>
+      </div>
     ))}
-  </ul>
+  </div>
 );
 
 export default PostList;
