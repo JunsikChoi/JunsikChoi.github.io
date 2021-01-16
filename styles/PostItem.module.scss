@@ -1,16 +1,31 @@
+@import "./palette.scss";
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 5fr 4fr;
   height: 100%;
+  background-color: $background-color;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 16px 0px;
+}
+
+.container:hover {
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 12px 20px 0px;
+  transition: box-shadow 0.25s ease-in 0s, transform 0.25s ease-in 0s;
+  transform: translate(0px, -10px);
 }
 
 .bannerImgContainer {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .bannerImg {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: fill;
@@ -21,7 +36,7 @@
   width: 100%;
   height: 100%;
   padding: 1rem;
-  background-color: #f4f4f4;
+  background-color: white;
   border-radius: 0 0 2rem 2rem;
 }
 
@@ -34,14 +49,20 @@
   h1 {
     width: 70%;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     letter-spacing: 0.02rem;
   }
   span {
     align-self: flex-end;
     font-weight: 500;
     font-size: 0.8rem;
-
-    // overflow: hidden;
+    color: rgba(0, 0, 0, 0.5);
   }
+  .postSummary {
+    p {
+      overflow: hidden;
+      height: 3rem;
+    }
+  }
+  // overflow: hidden;
 }

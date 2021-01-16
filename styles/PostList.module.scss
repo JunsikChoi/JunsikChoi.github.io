@@ -1,3 +1,5 @@
+@import "./palette.scss";
+
 .postContainer {
   padding: 2rem 0;
   display: grid;
@@ -8,20 +10,24 @@
   grid-auto-flow: dense;
   gap: 1rem 1rem;
 
+  @media (min-width: 1920px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   @media (max-width: 1024px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
   }
 
-  @media (min-width: 1920px) {
-    grid-template-columns: repeat(3, 1fr);
+  @media (max-width: 769px) {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
   }
 }
 
 .postItem {
-  // background-color: gray;
+  // background-color: $primary-color-2;
   min-width: 250px;
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 16px 0px;
   border-radius: 2rem;
 }
 // .postItem:nth-child(1) {

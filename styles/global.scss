@@ -1,6 +1,6 @@
 @import "../node_modules/scss-reset/_reset.scss";
 @import url("https://use.fontawesome.com/releases/v5.11.1/css/all.css");
-
+@import "./palette.scss";
 a,
 a:visited,
 a:hover,
@@ -12,4 +12,8 @@ a:active {
 html {
   font-family: "Noto Sans KR", sans-serif;
   box-sizing: border-box;
+}
+
+body {
+  background-color: $background-color;
 }

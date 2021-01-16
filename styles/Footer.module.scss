@@ -1,10 +1,14 @@
+@import "./palette.scss";
+
 .spacer {
-  height: 120px;
+  height: 100px;
 }
 .container {
   width: 100%;
+  height: 100px;
   box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.08);
   position: absolute;
+  background-color: $primary-color-1;
   left: 0;
   bottom: 0;
   padding: 15px 0;
@@ -13,17 +17,18 @@
   footer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    color: $light-font-color;
     .socialLinks {
       display: flex;
-      height: 5rem;
+      height: 50px;
       justify-content: center;
       align-items: center;
       .icons {
-        color: black;
         font-size: 1.5rem;
         &:hover {
-          color: red;
+          color: $point-color;
         }
       }
       .icons ~ .icons {
@@ -34,6 +39,10 @@
     .copyright {
       font-weight: 600;
       vertical-align: middle;
+      font-size: 0.8rem;
+      @media (max-width: 768px) {
+        font-size: 0.5rem;
+      }
     }
   }
 }
