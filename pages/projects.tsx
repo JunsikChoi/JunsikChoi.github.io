@@ -1,4 +1,3 @@
-import Link from "next/link";
 import PageHead from "../components/layout/PageHead";
 import styles from "../styles/Projects.module.scss";
 

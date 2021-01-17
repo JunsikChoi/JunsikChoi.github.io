@@ -2,21 +2,21 @@ import { GetStaticProps } from "next";
 import PageHead from "../components/layout/PageHead";
 import getPostsData from "../utils/getPostsData";
 import styles from "../styles/About.module.scss";
-import gfm from "remark-gfm";
-import toc from "remark-toc";
-import math from "remark-math";
-import ReactMarkdown from "react-markdown";
-import renderers from "../components/blog/renderers";
-import { useState } from "react";
+// import gfm from "remark-gfm";
+// import toc from "remark-toc";
+// import math from "remark-math";
+// import ReactMarkdown from "react-markdown";
+// import renderers from "../components/blog/renderers";
+// import { useState } from "react";
 
-const IndexPage = ({ allPosts }) => {
-  const [eng, setEng] = useState(false);
-  const engResume = allPosts[0];
-  const korResume = allPosts[1];
+const IndexPage = () => {
+  // const [eng, setEng] = useState(false);
+  // const engResume = allPosts[0];
+  // const korResume = allPosts[1];
 
-  const onClick = () => {
-    setEng(!eng);
-  };
+  // const onClick = () => {
+  //   setEng(!eng);
+  // };
 
   return (
     <>
