@@ -19,7 +19,7 @@ const PostListPage = ({ posts }: Props) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const posts = getPostsData();
+  const posts = getPostsData("content/posts");
 
   return { props: { posts } };
 };

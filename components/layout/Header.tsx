@@ -10,13 +10,13 @@ export default function Header() {
         </div>
         <nav className={styles.menu_wrapper}>
           <Link href="/about">
-            <a className={styles.menu_item}>소개</a>
+            <a className={styles.menu_item}>About</a>
           </Link>
           <Link href="/blog">
-            <a className={styles.menu_item}>블로그</a>
+            <a className={styles.menu_item}>Blog</a>
           </Link>
           <Link href="/projects">
-            <a className={styles.menu_item}>프로젝트</a>
+            <a className={styles.menu_item}>Projects</a>
           </Link>
         </nav>
       </header>

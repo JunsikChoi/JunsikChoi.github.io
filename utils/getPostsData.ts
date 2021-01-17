@@ -3,9 +3,8 @@ import path from "path";
 import matter from "gray-matter";
 import { Post } from "../interfaces";
 
-const postDIR = path.join(process.cwd(), "content/posts");
-
-const getPostsData = (): Post[] => {
+const getPostsData = (dir): Post[] => {
+  const postDIR = path.join(process.cwd(), dir);
   const fileNames = fs.readdirSync(postDIR);
   const allPostsData = fileNames.map((fileName) => {
     const id = fileName.replace(/\.md$/, "");

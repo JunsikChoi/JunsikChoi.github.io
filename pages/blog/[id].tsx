@@ -25,7 +25,7 @@ const PostDetailPage = ({ post, errors }: Props) => {
 export default PostDetailPage;
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const allPosts = getPostsData();
+  const allPosts = getPostsData("content/posts");
   const paths = allPosts.map((post) => ({
     params: { id: post.id.toString() },
   }));
@@ -35,7 +35,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   try {
-    const allPosts = getPostsData();
+    const allPosts = getPostsData("content/posts");
 
     const id = params?.id;
     const post = allPosts.find((post) => post.id === id);
